@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Magazine Découvrir</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style type="text/tailwindcss"></style>
+    </head>
+    <body class="bg-gray-200 font-sans">
+        <header class="sticky top-0 bg-white shadow-lg items-center justify-evenly z-50 flex flex-col lg:flex-row p-2">
+            <div class="flex items-center text-center gap-10">
+                <img class="h-18 w-18 py-1" src="images/icone-espagne.webp" alt="" />
+                <h1 class="font-serif text-[#c42847] text-4xl font-bold">MAGAZINE DÉCOUVRIR</h1>
+            </div>
+            <details class="lg:hidden w-full text-center">
+                <summary class="text-[#c42847] text-2xl font-serif font-bold">Menu</summary>
+                <nav class="flex flex-col text-start mb-5 text-lg font-bold">
+                    <a
+                        class="hover:scale-103 text-[#c42847] underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
+                        href="index.html"
+                        >Accueil</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="pages/gallerie.html"
+                        >Gallerie</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="pages/histoire.html"
+                        >Histoire</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="pages/ressources.html"
+                        >Ressources</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="pages/evenements.html"
+                        >Événements</a
+                    >
+                    <button
+                        class="hover:scale-103 hover:underline text-[#c42847] px-4 p-2 text-start rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                        type="button"
+                        commandfor="a-propos"
+                        command="show-modal">
+                        À propos
+                    </button>
+                </nav>
+            </details>
+            <nav class="hidden lg:flex items-center justify-evenly gap-2 text-lg font-bold">
+                <a
+                    class="hover:scale-103 text-[#c42847] underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
+                    href="index.html"
+                    >Accueil</a
+                >
+                <a
+                    class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                    href="pages/gallerie.html"
+                    >Gallerie</a
+                >
+                <a
+                    class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                    href="pages/histoire.html"
+                    >Histoire</a
+                >
+                <a
+                    class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                    href="pages/ressources.html"
+                    >Ressources</a
+                >
+                <a
+                    class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                    href="pages/evenements.html"
+                    >Événements</a
+                >
+                <button
+                    class="hover:scale-103 hover:underline text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                    type="button"
+                    commandfor="a-propos"
+                    command="show-modal">
+                    À propos
+                </button>
+                <dialog
+                    class="rounded-lg mx-auto my-auto w-1/2 h-1/2 p-6"
+                    id="a-propos"
+                    aria-labelledby="titre-a-propos">
+                    <div class="relative">
+                        <h2 class="text-center text-[#c42847] text-5xl mb-5 font-serif" id="titre-a-propos">
+                            À propos
+                        </h2>
+                        <hr class="mb-5 text-[#c42847]">
+                        <form class="text-end absolute top-0 right-0" method="dialog">
+                            <button
+                                class="text-[#c42847] font-serif hover:scale-104 border-2 border-[#c42847] rounded-lg p-1 transition duration-300"
+                                type="submit">
+                                Fermer
+                            </button>
+                        </form>
+                    </div>
+                    <div class="flex justify-evenly">
+                        <div class="border-4 rounded-lg border-gray-200">
+                            <img class="w-80 h-80 rounded-lg object-cover" src="images/paysage.jpg" alt="" />
+                            <p class="text-center p-4 text-gray-600">Roman Guertin</p>
+                            <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300"><a href="mailto:someone@gmail.com">Envoyer un courriel</a></p>
+                        </div>
+                        <div class="border-4 rounded-lg border-gray-200">
+                            <img class="w-80 h-80 rounded-lg object-cover" src="images/paysage.jpg" alt="" />
+                            <p class="text-center p-4 text-gray-600">Dilane Pokam</p>
+                            <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300"><a href="mailto:someone@gmail.com">Envoyer un courriel</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="border border-gray-200 rounded-xl p-1 mt-5 m-2  text-[#c42847]">Réalisé le 4 décembre, 2026</p>
+                        <p class="border border-gray-200 rounded-xl p-1 m-2  text-[#c42847]">Cégep de Saint-Jean-sur-Richelieu</p>
+                    </div>
+                    
+                </dialog>
+            </nav>
+        </header>
+        <main>
+            <section class="relative items-center overflow-hidden flex justify-center">
+                <img
+                    class="relative hover:blur-[0px] sm:h-[400px] lg:h-[600px] w-full transition duration-600 object-cover grayscale-50 blur-[3px]"
+                    src="images/ville-espagne.jpg"
+                    alt="Vue d'une ville espagnole" />
+                <div class="absolute text-5xl md:text-8xl lg:text-9xl underline text-white font-bold font-serif">
+                    España
+                </div>
+                <div></div>
+            </section>
+            <section class="bg-white py-15">
+                <p class="text-4xl font-serif text-[#c42847] text-center p-4">Découvrez l'espagne</p>
+                <p class="text-center font-serif text-xl text-gray-600">
+                    Notre coup de <span class="font-bold text-[#c42847]">coeur</span>
+                </p>
+                <p class="text-center mt-2 text-gray-600">
+                    Explorez la culture, des endroits magnifiques, l'histoire, et les nouvelles
+                </p>
+            </section>
+            <section class="flex justify-center py-6">
+                <div class="max-w-9/10 grid-cols-1 grid md:grid-cols-2">
+                    <article
+                        class="hover:scale-101 shadow-xl flex transition duration-400 rounded-lg bg-white m-3 overflow-hidden">
+                        <img class="objet-fit w-1/2" src="images/paysage.jpg" alt="" />
+                        <div class="w-full m-4">
+                            <h1 class="text-3xl text-center font-serif text-[#c42847]">Gallerie</h1>
+                            <p class="text-gray-600 text-center">
+                                Découvrez l'espagne d'une nouvelle façon en observant ses paysages magnifiques.
+                            </p>
+                        </div>
+                    </article>
+                    <article
+                        class="hover:scale-101 shadow-xl flex transition duration-400 rounded-lg bg-white m-3 overflow-hidden">
+                        <img class="objet-fit w-1/2" src="images/paysage.jpg" alt="" />
+                        <div class="w-full m-4">
+                            <h1 class="text-2xl text-center">Gallerie</h1>
+                            <p>Découvrir l'espagne en observant ses paysages magnifiques.</p>
+                        </div>
+                    </article>
+                    <article
+                        class="hover:scale-101 shadow-xl flex transition duration-400 rounded-lg bg-white m-3 overflow-hidden">
+                        <img class="objet-fit w-1/2" src="images/paysage.jpg" alt="" />
+                        <div class="w-full m-4">
+                            <h1 class="text-2xl text-center">Gallerie</h1>
+                            <p>Découvrir l'espagne en observant ses paysages magnifiques.</p>
+                        </div>
+                    </article>
+                    <article
+                        class="hover:scale-101 shadow-xl flex transition duration-400 rounded-lg bg-white m-3 overflow-hidden">
+                        <img class="objet-fit w-1/2" src="images/paysage.jpg" alt="" />
+                        <div class="w-full m-4">
+                            <h1 class="text-2xl text-center">Gallerie</h1>
+                            <p>Découvrir l'espagne en observant ses paysages magnifiques.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="bottom-0 flex items-center justify-center gap-5 p-5 w-full text-[#c42847] bg-white">
+            <h1 class="text-xl font-bold">Magasine Découvrir   ©</h1>
+            <h1>Tout droits réservés 2026</h1>
+        </footer>
+    </body>
+</html>
