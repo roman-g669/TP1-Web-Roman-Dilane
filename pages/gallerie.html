@@ -131,7 +131,9 @@
             </nav>
         </header>
         <main>
-            <h1 class="font-bold text-5xl text-center text-[#5a1226] font-serif p-3 mt-5 shadow-2xl">Découvre l'Espagne</h1>
+            <h1 class="font-bold text-5xl text-center text-[#5a1226] font-serif p-3 mt-5 shadow-2xl">
+                Découvre l'Espagne
+            </h1>
             <p class="text-xl text-center font-[Georgia] mt-5 shadow-xl">
                 Des palais, des places et des paysages qui racontent l'Espagne. Fais défiler les images, chaque légende
                 te donne un détail a retenir avant de parti.
@@ -147,14 +149,15 @@
             <p class="font-serif mt-3">
                 Chaque ville a son ambiance. Voici ce qui les rend uniques, en quelques lignes
             </p>
-            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto w-5/6 m-5 ">
-                <div class="border shadow-2xl transition duration-400 border-[3px] border-gray-100 mb-2 ml-3 rounded-lg overflow-hidden hover:scale-101">
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto w-5/6 m-5">
+                <div
+                    class="border shadow-2xl transition duration-400 border-[3px] border-gray-100 mb-2 ml-3 rounded-lg overflow-hidden hover:scale-101">
                     <img src="../images/barcelone.jfif" class="mb-5" />
                     <h1
                         class="font-bold text-xl text-center font-[serif] text-[#c42847] p-1 mb-3 mt-2 ml-2 hover:text-yellow-700">
                         Barcelone, entre mer et soleil
                     </h1>
-                    <p class="ml-2 font-[Georgia]">
+                    <p class="ml-2 font-[Georgia] text-shadow-lg">
                         Capitale de la Catalogne, entre mer Méditerranée, Barcelone séduit par son charme unique, son
                         architecture fascinante et ses rues animées. Entre plages ensoleillées, monuments emblématiques
                         et ambiance chaleureuse, la ville offre une expérience inoubliable où culture, détente et
@@ -166,13 +169,14 @@
                         >Voir dans la galerie</a
                     >
                 </div>
-                <div class="border shadow-2xl transition duration-400 border-[3px] border-gray-100 mb-2 ml-3 rounded-lg overflow-hidden hover:scale-101">
+                <div
+                    class="border shadow-2xl transition duration-400 border-[3px] border-gray-100 mb-2 ml-3 rounded-lg overflow-hidden hover:scale-101">
                     <img src="../images/madrid_1.jfif" class="mb-5" />
                     <h1
                         class="font-bold text-xl text-center font-[serif] text-[#c42847] p-1 mb-3 mt-2 ml-2 hover:text-yellow-700">
                         Madrid, au cœur de l'Espagne
                     </h1>
-                    <p class="ml-2 font-[Georgia]">
+                    <p class="ml-2 font-[Georgia] text-shadow-lg">
                         Capitale vibrante de l'Espagne, Madrid charme par son élégance, ses magnifiques places et son
                         riche patrimoine culturel. Entre rues animées, musées prestigieux, gastronomie savoureuse et vie
                         nocturne dynamique, la ville offre un mélange parfait de tradition et de modernité.
@@ -183,13 +187,14 @@
                         >Voir dans la galerie</a
                     >
                 </div>
-                <div class="border shadow-2xl transition duration-400 border-[3px] border-gray-100 mb-2 ml-3 rounded-lg overflow-hidden hover:scale-101">
+                <div
+                    class="border shadow-2xl transition duration-400 border-[3px] border-gray-100 mb-2 ml-3 rounded-lg overflow-hidden hover:scale-101">
                     <img src="../images/seville_2.jfif" class="mb-5" />
                     <h1
                         class="font-bold text-xl text-center font-[serif] text-[#c42847] p-1 mb-3 mt-2 ml-2 hover:text-yellow-700">
                         Séville, la beauté andalouse
                     </h1>
-                    <p class="ml-2 font-[Georgia]">
+                    <p class="ml-2 font-[Georgia] text-shadow-lg">
                         Séville est une ville pleine de charme, célèbre pour son architecture spectaculaire, ses ruelles
                         colorées et son ambiance chaleureuse. Entre palais majestueux, jardins magnifiques et traditions
                         flamenco, elle offre un véritable voyage au cœur de la culture espagnole.
@@ -208,6 +213,222 @@
                 <p class="font-bold">•✧✧✧•</p>
                 <p class="font-bold font-[Georgia]">Seville</p>
             </div>
+            <section class="mt-[40px] relative items-top overflow-hidden flex justify-center">
+                
+                <img class="relative w-full" src="../images/valencia.jpg" />
+                <p class="absolute mt-[50px] font-[serif]">
+                    Laissez-vous séduire par la beauté de l'Espagne, un pays où le soleil, la culture et l'histoire se
+                    rencontrent. Des rues animées de Madrid aux plages ensoleillées de Barcelone, en passant par le
+                    charme andalou de Séville, chaque ville vous réserve des découvertes uniques. Explorez des monuments
+                    fascinants, savourez une gastronomie riche en saveurs et plongez dans des traditions authentiques.
+                    Que vous soyez passionné d'histoire, amateur de paysages ou simplement à la recherche d'évasion,
+                    l'Espagne vous promet des moments inoubliables. Préparez vos valises et partez à la découverte des
+                    merveilles espagnoles !
+                </p>
+            </section>
+            <section class="sm-col-1 mt-5">
+                <div class="flex justify-between">
+                    <button
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] hover:bg-gray-700 hover:text-white transition-colors duration-[1s] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                        type="button"
+                        commandfor="partir"
+                        command="show-modal">
+                        Quand partir ?
+                    </button>
+                    <dialog
+                        class="rounded-lg mx-auto my-auto w-1/2 h-1/2 p-6"
+                        id="partir"
+                        aria-labelledby="meilleur-moment">
+                        <div class="relative">
+                            <hr class="mb-5 text-[#c42847]" />
+                            <form class="text-end absolute top-0 right-0" method="dialog">
+                                <button
+                                    class="text-yellow-700 mt-2 font-serif hover:scale-104 border-2 border-yellow-700 rounded-lg p-1 transition duration-300"
+                                    type="submit">
+                                    Fermer
+                                </button>
+                            </form>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="font-bold mb-3 font-[Georgia] text-yellow-600">
+                                Quelle est la meilleure période pour visiter l'Espagne ?
+                            </h3>
+                            <p class="font-[serif]">
+                                L'Espagne se visite toute l'année, mais le printemps (avril à juin) et l'automne
+                                (septembre à octobre) sont les périodes idéales pour profiter de températures agréables,
+                                découvrir les villes et explorer les paysages sans trop de chaleur. L'été est parfait
+                                pour les amateurs de plages et de soleil, tandis que l'hiver offre une ambiance plus
+                                calme et authentique.
+                            </p>
+                            <p class="font-bold mb-3 font-[Georgia] mt-3">
+                                Choisissez votre saison et laissez-vous emporter par la magie de l'Espagne !
+                            </p>
+                        </div>
+                    </dialog>
+                    <button
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] duration-[1s] hover:bg-gray-700 hover:text-white whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                        type="button"
+                        commandfor="budget"
+                        command="show-modal">
+                        Quel budget prevoire ?
+                    </button>
+                    <dialog class="rounded-lg mx-auto my-auto w-1/2 h-1/2 p-6" id="budget" aria-labelledby="prevoire">
+                        <div class="relative">
+                            <hr class="mb-5 text-[#c42847]" />
+                            <form class="text-end absolute top-0 right-0" method="dialog">
+                                <button
+                                    class="text-yellow-700 mt-2 font-serif hover:scale-104 border-2 border-yellow-700 rounded-lg p-1 transition duration-300"
+                                    type="submit">
+                                    Fermer
+                                </button>
+                            </form>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="font-bold mb-3 font-[Georgia] text-yellow-600">
+                                Quel budget prévoir pour visiter l'Espagne ?
+                            </h3>
+                            <p class="font-[serif]">
+                                L'Espagne est une destination qui s'adapte à différents budgets. Pour un séjour d'une
+                                semaine, prévoyez environ 700 à 1 200 € par personne, incluant l'hébergement, les repas,
+                                les transports et les activités. Les voyageurs souhaitant plus de confort peuvent
+                                prévoir un budget plus élevé. Pour économiser, privilégiez les réservations à l'avance,
+                                les transports en commun et les restaurants locaux.
+                            </p>
+                            <p class="font-bold mb-3 font-[Georgia] mt-3">
+                                Avec un peu de préparation, profitez pleinement de l'Espagne sans dépasser votre budget
+                                !
+                            </p>
+                        </div>
+                    </dialog>
+                    <button
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline duration-[1s] hover:bg-gray-700 hover:text-white text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                        type="button"
+                        commandfor="deplacer"
+                        command="show-modal">
+                        Comment se déplacer ?
+                    </button>
+                    <dialog
+                        class="rounded-lg mx-auto my-auto w-1/2 h-1/2 p-6"
+                        id="deplacer"
+                        aria-labelledby="comment se deplacer">
+                        <div class="relative">
+                            <hr class="mb-5 text-[#c42847]" />
+                            <form class="text-end absolute top-0 right-0" method="dialog">
+                                <button
+                                    class="text-yellow-700 mt-2 font-serif hover:scale-104 border-2 border-yellow-700 rounded-lg p-1 transition duration-300"
+                                    type="submit">
+                                    Fermer
+                                </button>
+                            </form>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="font-bold mb-3 font-[Georgia] text-yellow-600">
+                                Comment se déplacer en Espagne ?
+                            </h3>
+                            <p class="font-[serif]">
+                                L'Espagne dispose d'un excellent réseau de transport qui facilite les déplacements. Dans
+                                les grandes villes comme Madrid, Barcelone et Séville, le métro, les bus et les tramways
+                                sont pratiques et économiques. Pour voyager entre les villes, le train à grande vitesse
+                                (AVE) est une excellente option. Vous pouvez également louer une voiture pour explorer
+                                les villages et les paysages à votre rythme.
+                            </p>
+                            <p class="font-bold mb-3 font-[Georgia] mt-3">
+                                Que ce soit en train, en bus ou en voiture, partez à la découverte de l'Espagne en toute
+                                liberté !
+                            </p>
+                        </div>
+                    </dialog>
+                    <button
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline duration-[1s] hover:bg-gray-700 hover:text-white text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                        type="button"
+                        commandfor="visites"
+                        command="show-modal">
+                        Faut-il réserver les visites ?
+                    </button>
+                    <dialog
+                        class="rounded-lg mx-auto my-auto w-1/2 h-1/2 p-6"
+                        id="visites"
+                        aria-labelledby=" reserver les visites">
+                        <div class="relative">
+                            <hr class="mb-5 text-[#c42847]" />
+                            <form class="text-end absolute top-0 right-0" method="dialog">
+                                <button
+                                    class="text-yellow-700 mt-2 font-serif hover:scale-104 border-2 border-yellow-700 rounded-lg p-1 transition duration-300"
+                                    type="submit">
+                                    Fermer
+                                </button>
+                            </form>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="font-bold mb-3 font-[Georgia] text-yellow-600">
+                                Faut-il réserver les visites à l'avance ?
+                            </h3>
+                            <p class="font-[serif]">
+                                Oui, il est conseillé de réserver certaines visites à l'avance, surtout les monuments et
+                                attractions les plus populaires comme la Sagrada Família à Barcelone, le palais royal de
+                                Madrid ou l'Alhambra de Grenade. En haute saison, les billets peuvent rapidement être
+                                épuisés. Pour les musées, les visites guidées et certaines activités, la réservation
+                                permet également de gagner du temps et d'éviter les longues files d'attente.
+                            </p>
+                            <p class="font-bold mb-3 font-[Georgia] mt-3">
+                                Un peu d'organisation vous permettra de profiter pleinement de votre séjour en Espagne !
+                            </p>
+                        </div>
+                    </dialog>
+                    <button
+                        class="hover:scale-103 hover:text-[#E193A3] duration-[1s] hover:underline hover:bg-gray-700 hover:text-white text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                        type="button"
+                        commandfor="apprendre"
+                        command="show-modal">
+                        Quels mots utiles apprendre ?
+                    </button>
+                    <dialog
+                        class="rounded-lg mx-auto my-auto w-1/2 h-1/2 p-6"
+                        id="apprendre"
+                        aria-labelledby="mots utiles">
+                        <div class="relative">
+                            <hr class="mb-5 text-[#c42847]" />
+                            <form class="text-end absolute top-0 right-0" method="dialog">
+                                <button
+                                    class="text-yellow-700 mt-2 font-serif hover:scale-104 border-2 border-yellow-700 rounded-lg p-1 transition duration-300"
+                                    type="submit">
+                                    Fermer
+                                </button>
+                            </form>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="font-bold mb-3 font-[Georgia] text-yellow-600">
+                                Quels mots utiles apprendre avant de partir en Espagne ?
+                            </h3>
+                            <div>
+                                <ul class="list-disc list-inside space-y-2">
+                                    <li><span class="font-bold font-[serif]">Hola :</span>Bonjour</li>
+                                    <li><span class="font-bold font-[serif]">Gracias :</span> Merci</li>
+                                    <li><span class="font-bold font-[serif]">Por favor :</span>S'il vous plaît</li>
+                                    <li><span class="font-bold font-[serif]">Buenos días :</span>Bonjour (le matin)</li>
+                                    <li>
+                                        <span class="font-bold font-[serif]">¿Cuánto cuesta? : </span>Combien ça coûte ?
+                                    </li>
+                                    <li>
+                                        <span class="font-bold font-[serif]">No entiendo :</span>Je ne comprends pas.
+                                    </li>
+                                    <li>
+                                        <span class="font-bold font-[serif]">¿Habla francés? :</span> Parlez-vous
+                                        français ?
+                                    </li>
+                                    <li><span class="font-bold font-[serif]">Adiós :</span>Au revoir</li>
+                                </ul>
+                            </div>
+                            <p class="font-bold mb-3 font-[Georgia] mt-3">
+                                Pas besoin de parler couramment espagnol : quelques mots suffisent pour faciliter vos
+                                rencontres et profiter davantage de votre aventure !
+                            </p>
+                        </div>
+                    </dialog>
+                    <p></p>
+                </div>
+                
+            </section>
         </main>
         <footer class="bottom-0 flex items-center justify-center gap-5 p-5 w-full text-[#c42847] bg-white">
             <h1 class="text-xl font-bold">Magasine Découvrir   ©</h1>
