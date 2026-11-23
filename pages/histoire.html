@@ -1,117 +1,310 @@
 <!doctype html>
 <html lang="fr">
+    <head>
+        <link rel="icon" type="image/webp" sizes="32x32" href="images/icone-espagne.webp" />
+        <meta charset="UTF-8" />
+        <title>Magazine Découvrir</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style type="text/tailwindcss"></style>
+    </head>
 
-<head>
-    <link rel="icon" type="image/webp" sizes="32x32" href="../images/icone-espagne.webp">
-    <meta charset="UTF-8" />
-    <title>Magazine Découvrir</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-
-    </style>
-</head>
-
-<body class="bg-gray-200 font-sans">
-    <header class="sticky top-0 bg-white shadow-lg items-center justify-evenly z-50 flex flex-col lg:flex-row p-2">
-        <div class="flex items-center text-center gap-10">
-            <img class="h-18 w-18 py-1" src="../images/icone-espagne.webp" alt="" />
-            <h1 class="font-serif text-[#c42847] text-4xl font-bold">MAGAZINE DÉCOUVRIR</h1>
-        </div>
-        <details class="lg:hidden w-full text-center">
-            <summary class="text-[#c42847] text-2xl font-serif font-bold">Menu</summary>
-            <nav class="flex flex-col text-start mb-5 text-lg font-bold">
-                <a class="hover:scale-103 text-[#c42847] underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
-                    href="../index.html">Accueil</a>
-                <a class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                    href="pages/gallerie.html">Gallerie</a>
-                <a class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                    href="pages/histoire.html">Histoire</a>
-                <a class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                    href="pages/ressources.html">Ressources</a>
-                <a class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                    href="pages/evenements.html">Événements</a>
+    <body class="bg-gray-200 font-sans">
+        <header class="sticky top-0 bg-white shadow-lg items-center justify-evenly z-50 flex flex-col lg:flex-row p-2">
+            <div class="flex items-center text-center gap-10">
+                <img class="h-18 w-18 py-1" src="../images/icone-espagne.webp" alt="" />
+                <h1 class="font-serif text-[#c42847] text-4xl font-bold">MAGAZINE DÉCOUVRIR</h1>
+            </div>
+            <details class="lg:hidden w-full text-center">
+                <summary class="text-[#c42847] text-2xl font-serif font-bold">Menu</summary>
+                <nav class="flex flex-col text-start mb-5 text-lg font-bold">
+                    <a
+                        class="hover:scale-103 text-[#c42847] underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
+                        href="../index.html"
+                        >Accueil</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="pages/gallerie.html"
+                        >Gallerie</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="pages/histoire.html"
+                        >Histoire</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="pages/ressources.html"
+                        >Ressources</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="pages/evenements.html"
+                        >Événements</a
+                    >
+                    <button
+                        class="hover:scale-103 hover:underline text-[#c42847] px-4 p-2 text-start rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                        type="button"
+                        commandfor="a-propos"
+                        command="show-modal">
+                        À propos
+                    </button>
+                </nav>
+            </details>
+            <nav class="hidden lg:flex items-center justify-evenly gap-2 text-lg font-bold">
+                <a
+                    class="hover:scale-103 text-[#c42847] hover:underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
+                    href="../index.html"
+                    >Accueil</a
+                >
+                <a
+                    class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                    href="gallerie.html"
+                    >Gallerie</a
+                >
+                <a
+                    class="hover:scale-103 underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                    href="histoire.html"
+                    >Histoire</a
+                >
+                <a
+                    class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                    href="ressources.html"
+                    >Ressources</a
+                >
+                <a
+                    class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                    href="evenements.html"
+                    >Événements</a
+                >
                 <button
-                    class="hover:scale-103 hover:underline text-[#c42847] px-4 p-2 text-start rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
-                    type="button" commandfor="a-propos" command="show-modal">
+                    class="hover:scale-103 hover:underline text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                    type="button"
+                    commandfor="a-propos"
+                    command="show-modal">
                     À propos
                 </button>
-
+                <dialog
+                    class="rounded-lg mx-auto my-auto w-1/2 h-1/2 p-6"
+                    id="a-propos"
+                    aria-labelledby="titre-a-propos">
+                    <div class="relative">
+                        <h2 class="text-center text-[#c42847] text-5xl mb-5 font-serif" id="titre-a-propos">
+                            À propos
+                        </h2>
+                        <hr class="mb-5 text-[#c42847]" />
+                        <form class="text-end absolute top-0 right-0" method="dialog">
+                            <button
+                                class="text-[#c42847] font-serif hover:scale-104 border-2 border-[#c42847] rounded-lg p-1 transition duration-300"
+                                type="submit">
+                                Fermer
+                            </button>
+                        </form>
+                    </div>
+                    <div class="flex justify-evenly">
+                        <div class="border-4 rounded-lg border-gray-200">
+                            <img class="w-80 h-80 rounded-lg object-cover" src="images/paysage.jpg" alt="" />
+                            <p class="text-center p-4 text-gray-600">Roman Guertin</p>
+                            <p
+                                class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300">
+                                <a href="mailto:someone@gmail.com">Envoyer un courriel</a>
+                            </p>
+                        </div>
+                        <div class="border-4 rounded-lg border-gray-200">
+                            <img class="w-80 h-80 rounded-lg object-cover" src="images/paysage.jpg" alt="" />
+                            <p class="text-center p-4 text-gray-600">Dilane Pokam</p>
+                            <p
+                                class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300">
+                                <a href="mailto:someone@gmail.com">Envoyer un courriel</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="border border-gray-200 rounded-xl p-1 mt-5 m-2 text-[#c42847]">
+                            Réalisé le 4 décembre, 2026
+                        </p>
+                        <p class="border border-gray-200 rounded-xl p-1 m-2 text-[#c42847]">
+                            Cégep de Saint-Jean-sur-Richelieu
+                        </p>
+                    </div>
+                </dialog>
             </nav>
-        </details>
-        <nav class="hidden lg:flex items-center justify-evenly gap-2 text-lg font-bold">
-            <a class="hover:scale-103 text-[#c42847] hover:underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
-                href="../index.html">Accueil</a>
-            <a class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                href="gallerie.html">Gallerie</a>
-            <a class="hover:scale-103 underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                href="histoire.html">Histoire</a>
-            <a class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                href="ressources.html">Ressources</a>
-            <a class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                href="evenements.html">Événements</a>
-            <button
-                class="hover:scale-103 hover:underline text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
-                type="button" commandfor="a-propos" command="show-modal">
-                À propos
-            </button>
-            <dialog class="rounded-lg mx-auto my-auto w-1/2 h-1/2 p-6" id="a-propos" aria-labelledby="titre-a-propos">
-                <div class="relative">
-                    <h2 class="text-center text-[#c42847] text-5xl mb-5 font-serif" id="titre-a-propos">
-                        À propos
-                    </h2>
-                    <hr class="mb-5 text-[#c42847]">
-                    <form class="text-end absolute top-0 right-0" method="dialog">
-                        <button
-                            class="text-[#c42847] font-serif hover:scale-104 border-2 border-[#c42847] rounded-lg p-1 transition duration-300"
-                            type="submit">
-                            Fermer
-                        </button>
-                    </form>
+        </header>
+        <main>
+            <section class="relative flex items-center">
+                <div class="absolute inset-0">
+                    <img class="w-full h-full object-cover" src="../images/madrid_1.jfif" alt="paysage espagnol" />
+                    <div class="absolute inset-0 bg-black/60"></div>
                 </div>
-                <div class="flex justify-evenly">
-                    <div class="border-4 rounded-lg border-gray-200">
-                        <img class="w-80 h-80 rounded-lg object-cover" src="images/paysage.jpg" alt="" />
-                        <p class="text-center p-4 text-gray-600">Roman Guertin</p>
-                        <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300"><a
-                                href="mailto:someone@gmail.com">Envoyer un courriel</a></p>
-                    </div>
-                    <div class="border-4 rounded-lg border-gray-200">
-                        <img class="w-80 h-80 rounded-lg object-cover" src="images/paysage.jpg" alt="" />
-                        <p class="text-center p-4 text-gray-600">Dilane Pokam</p>
-                        <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300"><a
-                                href="mailto:someone@gmail.com">Envoyer un courriel</a></p>
-                    </div>
+                <div class="relative mx-w-7xl mx-auto px-6 py-24 text-white">
+                    <p class="text-yellow-500 tracking-[4px] mb-4 uppercase">Patrimoine •✧✧✧• Culture •✧✧✧• Histoire</p>
+                    <h1 class="text-4xl md:text-6xl font-bold max-w-3xl">L'Espagne à travers les siècles</h1>
+                    <p class="mt-6 text-lg text-gray-200 max-w-2xl">
+                        Des anciennes civilisations a l'Espagne moderne, découvrez le événements qui ont faconné
+                        l'identité de ce pays.
+                    </p>
+                    <a class="inline-block mt-6 bg-yellow-600 hover:bg-red-900 px-8 py-3 rounded-md transition" href="#chiffres">Laissez-vous surprendre par toutes les richesses de l'Espagne !</a>
                 </div>
+            </section>
+            <div class="mx-auto w-5/6">
+                <h1 class="text-2xl mt-5 text-[#5a1226] font-bold font-[Georgia] uppercase">Un voyage dans le temps</h1>
+                <p class="text-gray-600">
+                    Découvrez l'histoire fascinante de l'Espagne, un pays marqué par de grandes civilisations, des
+                    conquêtes, des traditions et des événements qui ont façonné son identité. Partez à la découverte de
+                    son passé et explorez les lieux historiques qui témoignent encore de sa richesse culturelle.
+                </p>
+            </div>
+            <div class="mx-auto w-5/6">
+                <h1 class="text-2xl mt-[50px] text-[#5a1226] font-bold font-serif uppercase text-center">
+                    Les grandes périodes
+                </h1>
                 <div>
-                    <p class="border border-gray-200 rounded-xl p-1 mt-5 m-2  text-[#c42847]">Réalisé le 4 décembre,
-                        2026</p>
-                    <p class="border border-gray-200 rounded-xl p-1 m-2  text-[#c42847]">Cégep de
-                        Saint-Jean-sur-Richelieu</p>
+                    <article
+                        class="flex flex-col sm:flex-row mx-auto w-5/6 border border-gray-100 rounded-xl overflow-hidden mt-2">
+                        <div class="w-3/6 object-cover"><img src="../images/hist_1.jfif" /></div>
+                        <div class="w-3/6 p-5 drop-shadow-2xl items-stretch">
+                            <h1 class="text-xl mt-[10px] font-bold">218 av. J.-C. – La présence romaine</h1>
+                            <br />
+                            <p>
+                                Les Romains s'installent dans la péninsule Ibérique et développent des villes, des
+                                routes et des monuments.
+                            </p>
+                            <br />
+                        </div>
+                    </article>
+
+                    <article class="flex mx-auto w-5/6 border border-gray-100 rounded-xl overflow-hidden mt-2">
+                        <div class="w-3/6 object-cover">
+                            <img src="../images/chronologie-espagne-synthese.jpg.webp" />
+                        </div>
+                        <div class="w-3/6 p-5 drop-shadow-2xl">
+                            <h1 class="text-xl mt-[10px] font-bold">711 – La période musulmane</h1>
+                            <br />
+                            <p>
+                                La conquête musulmane transforme une grande partie de la péninsule. L'architecture, les
+                                sciences et la culture connaissent un important développement.
+                            </p>
+                            <br />
+                        </div>
+                    </article>
+
+                    <article class="flex mx-auto w-5/6 border border-gray-100 rounded-xl overflow-hidden mt-2">
+                        <div class="w-3/6"><img src="../images/hist_3.jfif" /></div>
+                        <div class="w-3/6 p-5 drop-shadow-2xl">
+                            <h1 class="text-xl mt-[10px] font-bold">1492 – Un tournant historique</h1>
+                            <br />
+                            <p>
+                                La prise de Grenade marque la fin du royaume musulman de Grenade. La même année,
+                                Christophe Colomb entreprend son voyage vers les Amériques.
+                            </p>
+                            <br />
+                            <p class="mt-3">
+                                <span class="font-bold">À faire :</span> parcourir le quai jusqu’au petit phare.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="flex mx-auto w-5/6 border border-gray-100 rounded-xl overflow-hidden mt-2">
+                        <div class="w-3/6"><img src="../images/hist_4.jfif" /></div>
+                        <div class="w-3/6 p-5 drop-shadow-2xl">
+                            <h1 class="text-xl mt-[10px] font-bold">XVIe – XVIIe siècles : L'âge d'or espagnol</h1>
+                            <br />
+                            <p>
+                                L'Espagne devient une grande puissance mondiale et connaît un rayonnement artistique et
+                                culturel important.
+                            </p>
+                            <br />
+                        </div>
+                    </article>
+
+                    <article class="flex mx-auto w-5/6 border border-gray-100 rounded-xl overflow-hidden mt-2">
+                        <div class="w-3/6"><img src="../images/hist_5.jfif" /></div>
+                        <div class="w-3/6 p-5 drop-shadow-2xl">
+                            <h1 class="text-xl mt-[10px] font-bold">1492 – La découverte du Nouveau Monde</h1>
+                            <br />
+                            <p>
+                                Christophe Colomb entreprend son célèbre voyage vers les Amériques. Cette année marque
+                                également la fin du royaume musulman de Grenade.
+                            </p>
+                            <br />
+                        </div>
+                    </article>
+
+                    <article class="flex mx-auto w-5/6 border border-gray-100 rounded-xl overflow-hidden mt-2">
+                        <div class="w-3/6"><img src="../images/hist_6.jfif" /></div>
+                        <div class="w-3/6 p-5 drop-shadow-2xl">
+                            <h1 class="text-xl mt-[10px] font-bold">1936 – 1939 : La guerre civile espagnole</h1>
+                            <br />
+                            <p>
+                                L'Espagne traverse une période difficile marquée par un conflit entre républicains et
+                                nationalistes, qui bouleverse profondément le pays.
+                            </p>
+                            <br />
+                        </div>
+                    </article>
+
+                    <article class="flex mx-auto w-5/6 border border-gray-100 rounded-xl overflow-hidden mt-2">
+                        <div class="w-3/6"><img src="../images/hist_7.jfif" /></div>
+                        <div class="w-3/6 p-5 drop-shadow-2xl">
+                            <h1 class="text-xl mt-[10px] font-bold">1978 – Le retour à la démocratie</h1>
+                            <br />
+                            <p>
+                                Après la dictature de Franco, l'Espagne adopte une nouvelle Constitution et devient une
+                                monarchie parlementaire démocratique.
+                            </p>
+                            <br />
+                        </div>
+                    </article>
                 </div>
+            </div>
+            <section>
+                <h1 id="chiffres" class="text-xl mt-[50px] text-[#5a1226] font-bold font-serif uppercase text-center">
+                    L'Espagne en chiffres
+                </h1>
+                <p class="m-3">
+                    Découvrez un pays riche en culture, en histoire et en paysages. Voici quelques chiffres qui
+                    permettent de mieux connaître cette destination fascinante.
+                </p>
+                <p class="m-3">
+                    Derrière ces chiffres se cache un pays exceptionnel, composé de paysages variés, de villes
+                    magnifiques, de traditions uniques et d'un patrimoine historique remarquable. Chaque région possède
+                    son propre charme et mérite d'être découverte.
+                </p>
+                
+                <div class="flex w-full text-center">
+                    <div
+                        class="flex flex-col p-5 border border-gray-100 bg-red-200 w-[25%] mt-5 rounded-b-none rounded-xl m-3   hover:bg-yellow-500 transition-colors duration-[2s]">
+                        <p class="text-red-900 font-[serif] font-bold">17</p>
+                        <p class="font-[serif] font-bold">Communautés autonome</p>
+                        <p class="text-sm text-gray">17 communautés autonomes et 2 villes autonomes.</p>
+                    </div>
 
-            </dialog>
-        </nav>
-    </header>
-    <main>
-        <section class="mt-5">
-        <div class="flex-col min-[481px]:flex-row bg-yellow-100 flex mx-auto w-5/6 border rounded-xl justify-between border-gray-200 overflow-hidden">
-          <div class="flex-col min-[481px]:ml-5  pt-3 mt-3">
-            <h1 class="text-5xl font-bold">Chronologie historique du pays espagnol</h1>
-            <p class="m-5">
-              Découvrez les plus grands évènements de l'histoire de l'Espagne résumés pour vous !
-            </p>
-            <a class="bg-gray-900 border text-white p-2 mt-3 rounded-lg w-1/3 ">Choisir une escapade</a>
-          </div>
-          <div class="">
-            <img src="../images/chronologie-espagne-synthese.jpg.webp"/>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="bottom-0 flex items-center justify-center gap-5 p-5 w-full text-[#c42847] bg-white">
-        <h1 class="text-xl font-bold">Magasine Découvrir   ©</h1>
-        <h1>Tout droits réservés 2026</h1>
-    </footer>
-</body>
+                    <div
+                        class="flex flex-col p-5 border border-gray-100 bg-yellow-200 w-[25%] mt-5 rounded-b-none rounded-xl m-3 hover:bg-red-400 transition-colors duration-[2s]">
+                        <p class="text-red-900 font-[serif] font-bold">505 983</p>
+                        <p class="font-[serif] font-bold">km² de superficie</p>
+                        <p class="text-sm text-gray">Un vaste territoire à explorer.</p>
+                    </div>
 
+                    <div
+                        class="flex flex-col p-5 border border-gray-100 bg-blue-200 w-[25%] mt-5 rounded-b-none rounded-xl m-3 hover:bg-yellow-500 transition-colors duration-[2s]">
+                        <p class="text-red-900 font-[serif] font-bold">49,6 M</p>
+                        <p class="font-[serif] font-bold">Habitants</p>
+                         <p class="text-sm text-gray">Une population de près de 50 millions de personnes.</p>
+                    </div>
+
+                    <div
+                        class="flex flex-col p-5 border border-gray-100 bg-gray-500 w-[25%] mt-5 rounded-b-none rounded-xl m-3  hover:bg-yellow-500 transition-colors duration-[2s]">
+                        <p class="text-red-900 font-[serif] font-bold">Madrid</p>
+                        <p class="font-[serif] font-bold">Capitale</p>
+                         <p class="text-sm text-gray">Le cœur politique et culturel du pays.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bottom-0 flex items-center justify-center gap-5 p-5 w-full text-[#c42847] bg-white">
+            <h1 class="text-xl font-bold">Magasine Découvrir   ©</h1>
+            <h1>Tout droits réservés 2026</h1>
+        </footer>
+    </body>
 </html>
