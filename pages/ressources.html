@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/icone-espagne.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icone-espagne.webp">
     <meta charset="UTF-8" />
     <title>Magazine Découvrir</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -53,12 +53,18 @@
                 type="button" commandfor="a-propos" command="show-modal">
                 À propos
             </button>
-            <dialog class="rounded-lg mx-auto my-auto w-1/2 h-1/2 p-6" id="a-propos" aria-labelledby="titre-a-propos">
+
+
+            <!-- A propos-->
+
+            
+            <dialog class="rounded-lg mx-auto my-auto w-3/4 md:w-1/2 md:h-4/6 md:h-1/2 p-6" id="a-propos"
+                aria-labelledby="titre-a-propos">
                 <div class="relative">
-                    <h2 class="text-center text-[#c42847] text-5xl mb-5 font-serif" id="titre-a-propos">
+                    <h2 class="sm:text-center text-[#c42847] text-2xl md:text-5xl mb-5 font-serif" id="titre-a-propos">
                         À propos
                     </h2>
-                    <hr class="mb-5 text-[#c42847]">
+                    <hr class="mb-5 text-[#c42847]" />
                     <form class="text-end absolute top-0 right-0" method="dialog">
                         <button
                             class="text-[#c42847] font-serif hover:scale-104 border-2 border-[#c42847] rounded-lg p-1 transition duration-300"
@@ -67,27 +73,31 @@
                         </button>
                     </form>
                 </div>
-                <div class="flex justify-evenly">
-                    <div class="border-4 rounded-lg border-gray-200">
-                        <img class="w-80 h-80 rounded-lg object-cover" src="images/paysage.jpg" alt="" />
-                        <p class="text-center p-4 text-gray-600">Roman Guertin</p>
-                        <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300"><a
-                                href="mailto:someone@gmail.com">Envoyer un courriel</a></p>
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
+                    <div class="border-4 rounded-lg border-gray-200 mx-auto">
+                        <img class="w-100 min-h-100 h-auto mb:0 rounded-lg object-cover" src="../images/romanlegoat.jpg"
+                            alt="" />
+                        <p class="text-center p-4 text-xl text-gray-600">Roman Guertin</p>
+                        <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300">
+                            <a href="mailto:romanguertin@gmail.com">Envoyer un courriel</a>
+                        </p>
                     </div>
-                    <div class="border-4 rounded-lg border-gray-200">
-                        <img class="w-80 h-80 rounded-lg object-cover" src="images/paysage.jpg" alt="" />
-                        <p class="text-center p-4 text-gray-600">Dilane Pokam</p>
-                        <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300"><a
-                                href="mailto:someone@gmail.com">Envoyer un courriel</a></p>
+                    <div class="border-4 rounded-lg mx-auto border-gray-200">
+                        <img class="w-100 min-h-100 h-auto rounded-lg mb-0 object-cover" src="images/paysage.jpg"
+                            alt="" />
+                        <p class="text-center text-xl p-4 text-gray-600">Dilane Pokam</p>
+                        <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300">
+                            <a href="mailto:someone@gmail.com">Envoyer un courriel</a>
+                        </p>
                     </div>
                 </div>
                 <div>
-                    <p class="border border-gray-200 rounded-xl p-1 mt-5 m-2  text-[#c42847]">Réalisé le 4 décembre,
-                        2026</p>
-                    <p class="border border-gray-200 rounded-xl p-1 m-2  text-[#c42847]">Cégep de
-                        Saint-Jean-sur-Richelieu</p>
+                    <p class="border border-gray-200 rounded-xl p-1 mt-5 m-2 text-[#c42847]">Réalisé le 4 décembre, 2026
+                    </p>
+                    <p class="border border-gray-200 rounded-xl p-1 m-2 text-[#c42847]">
+                        Cégep de Saint-Jean-sur-Richelieu
+                    </p>
                 </div>
-
             </dialog>
         </nav>
     </header>
