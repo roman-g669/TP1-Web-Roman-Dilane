@@ -9,130 +9,141 @@
     </head>
 
     <body class="bg-gray-200 font-sans">
-        <header class="sticky top-0 bg-white shadow-lg items-center justify-evenly z-50 flex flex-col lg:flex-row p-2">
-            <div class="flex items-center text-center gap-10">
-                <img class="h-18 w-18 py-1" src="../images/icone-espagne.webp" alt="" />
-                <h1 class="font-serif text-[#c42847] text-4xl font-bold">MAGAZINE DÉCOUVRIR</h1>
-            </div>
-            <details class="lg:hidden w-full text-center">
-                <summary class="text-[#c42847] text-2xl font-serif font-bold">Menu</summary>
-                <nav class="flex flex-col text-start mb-5 text-lg font-bold">
+        <!-- Header -->
+        <header class="sticky top-0 z-50">
+            <div class="bg-white items-center justify-evenly flex xl:flex-row flex-col p-2">
+                <div class="flex items-center text-center gap-10">
+                    <img class="h-18 w-18 py-1" src="../images/icone-espagne.webp" alt="Icone MAGAZINE DECOUVRIR" />
+                    <h1 class="font-serif text-[#c42847] text-4xl font-bold">MAGAZINE DÉCOUVRIR</h1>
+                </div>
+                <!-- Nav mobile -->
+                <details class="lg:hidden w-full text-center">
+                    <summary class="text-[#c42847] text-2xl font-serif font-bold">Menu</summary>
+                    <nav class="flex flex-col text-start mb-5 text-lg font-bold">
+                        <a
+                            class="hover:scale-103 text-[#c42847] hover:underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
+                            href="../index.html"
+                            >Accueil</a
+                        >
+                        <a
+                            class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                            href="gallerie.html"
+                            >Gallerie</a
+                        >
+                        <a
+                            class="hover:scale-103 underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                            href="histoire.html"
+                            >Histoire</a
+                        >
+                        <a
+                            class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                            href="ressources.html"
+                            >Ressources</a
+                        >
+                        <a
+                            class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                            href="evenements.html"
+                            >Événements</a
+                        >
+                        <button
+                            class="hover:scale-103 hover:underline text-[#c42847] px-4 p-2 text-start rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                            type="button"
+                            commandfor="a-propos"
+                            command="show-modal">
+                            À propos
+                        </button>
+                    </nav>
+                </details>
+
+                <!-- Nav ordinateur -->
+
+                <nav
+                    class="hidden lg:flex mt-10 lg:mt-0 lg:items-center justify-evenly items-stretch gap-2 text-lg font-bold">
                     <a
-                        class="hover:scale-103 text-[#c42847] underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
+                        class="hover:scale-103 hover:text-[#E193A3] text-[#c42847] hover:underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
                         href="../index.html"
                         >Accueil</a
                     >
                     <a
-                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                        href="pages/gallerie.html"
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="gallerie.html"
                         >Gallerie</a
                     >
                     <a
-                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                        href="pages/histoire.html"
+                        class="hover:scale-103 hover:text-[#E193A3] underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="histoire.html"
                         >Histoire</a
                     >
                     <a
-                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                        href="pages/ressources.html"
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="ressources.html"
                         >Ressources</a
                     >
                     <a
-                        class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                        href="pages/evenements.html"
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="evenements.html"
                         >Événements</a
                     >
                     <button
-                        class="hover:scale-103 hover:underline text-[#c42847] px-4 p-2 text-start rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
                         type="button"
                         commandfor="a-propos"
                         command="show-modal">
                         À propos
                     </button>
                 </nav>
-            </details>
-            <nav class="hidden lg:flex items-center justify-evenly gap-2 text-lg font-bold">
-                <a
-                    class="hover:scale-103 text-[#c42847] hover:underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
-                    href="../index.html"
-                    >Accueil</a
-                >
-                <a
-                    class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                    href="gallerie.html"
-                    >Gallerie</a
-                >
-                <a
-                    class="hover:scale-103 underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                    href="histoire.html"
-                    >Histoire</a
-                >
-                <a
-                    class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                    href="ressources.html"
-                    >Ressources</a
-                >
-                <a
-                    class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                    href="evenements.html"
-                    >Événements</a
-                >
-                <button
-                    class="hover:scale-103 hover:underline text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
-                    type="button"
-                    commandfor="a-propos"
-                    command="show-modal">
-                    À propos
-                </button>
-                <dialog
-                    class="rounded-lg mx-auto my-auto w-1/2 h-1/2 p-6"
-                    id="a-propos"
-                    aria-labelledby="titre-a-propos">
-                    <div class="relative">
-                        <h2 class="text-center text-[#c42847] text-5xl mb-5 font-serif" id="titre-a-propos">
-                            À propos
-                        </h2>
-                        <hr class="mb-5 text-[#c42847]" />
-                        <form class="text-end absolute top-0 right-0" method="dialog">
-                            <button
-                                class="text-[#c42847] font-serif hover:scale-104 border-2 border-[#c42847] rounded-lg p-1 transition duration-300"
-                                type="submit">
-                                Fermer
-                            </button>
-                        </form>
-                    </div>
-                    <div class="flex justify-evenly">
-                        <div class="border-4 rounded-lg border-gray-200">
-                            <img class="w-80 h-80 rounded-lg object-cover" src="images/paysage.jpg" alt="" />
-                            <p class="text-center p-4 text-gray-600">Roman Guertin</p>
-                            <p
-                                class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300">
-                                <a href="mailto:someone@gmail.com">Envoyer un courriel</a>
-                            </p>
-                        </div>
-                        <div class="border-4 rounded-lg border-gray-200">
-                            <img
-                                class="w-80 h-80 rounded-lg object-cover"
-                                src="../images/Dilane.jfif"
-                                alt=" Dilane portrait" />
-                            <p class="text-center p-4 text-gray-600">Dilane Pokam</p>
-                            <p
-                                class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300">
-                                <a href="mailto:pokamdilane16@gmail.com">Envoyer un courriel</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="border border-gray-200 rounded-xl p-1 mt-5 m-2 text-[#c42847]">
-                            Réalisé le 4 décembre, 2026
-                        </p>
-                        <p class="border border-gray-200 rounded-xl p-1 m-2 text-[#c42847]">
-                            Cégep de Saint-Jean-sur-Richelieu
-                        </p>
-                    </div>
-                </dialog>
-            </nav>
+            </div>
         </header>
+
+        <!-- A propos -->
+
+        <dialog
+            class="rounded-lg mx-auto my-auto w-3/4 md:w-1/2 md:h-4/6 md:h-1/2 p-6"
+            id="a-propos"
+            aria-labelledby="titre-a-propos">
+            <div class="relative">
+                <h2 class="sm:text-center text-[#c42847] text-2xl md:text-5xl mb-5 font-serif" id="titre-a-propos">
+                    À propos
+                </h2>
+                <hr class="mb-5 text-[#c42847]" />
+                <form class="text-end absolute top-0 right-0" method="dialog">
+                    <button
+                        class="text-[#c42847] font-serif hover:scale-104 border-2 border-[#c42847] rounded-lg p-1 transition duration-300"
+                        type="submit">
+                        Fermer
+                    </button>
+                </form>
+            </div>
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
+                <div class="border-4 rounded-lg border-gray-200 mx-auto">
+                    <img
+                        class="w-100 h-100 mb:0 rounded-lg object-cover"
+                        src="../images/romanlegoat.jpg"
+                        alt="Portrait de Roman" />
+                    <p class="text-center p-4 text-xl text-gray-600">Roman Guertin</p>
+                    <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300">
+                        <a href="mailto:romanguertin@gmail.com">Envoyer un courriel</a>
+                    </p>
+                </div>
+                <div class="border-4 rounded-lg mx-auto border-gray-200">
+                    <img
+                        class="w-100 h-100 rounded-lg mb-0 object-cover"
+                        src="../images/Dilane.jfif"
+                        alt="Portrait de Dilane" />
+                    <p class="text-center text-xl p-4 text-gray-600">Dilane Pokam</p>
+                    <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300">
+                        <a href="mailto:pokamdilane16@gmail.com">Envoyer un courriel</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p class="border border-gray-200 rounded-xl p-1 mt-5 m-2 text-[#c42847]">Réalisé le 4 décembre, 2026</p>
+                <p class="border border-gray-200 rounded-xl p-1 m-2 text-[#c42847]">
+                    Cégep de Saint-Jean-sur-Richelieu
+                </p>
+            </div>
+        </dialog>
+
         <main id="haut">
             <section class="relative flex items-center">
                 <div class="absolute inset-0">
@@ -182,9 +193,10 @@
 
                     <article
                         class="flex flex-col md:flex-row mx-auto w-11/12 md:5/6 border border-gray-100 rounded-xl overflow-hidden mt-2 md:hover:scale-101 transition duration-400">
-                        
-                            <img class="w-full h-55 md:h-auto md:w-1/2 shrink-0 object-cover" src="../images/chronologie-espagne-synthese.jpg.webp" />
-                        
+                        <img
+                            class="w-full h-55 md:h-auto md:w-1/2 shrink-0 object-cover"
+                            src="../images/chronologie-espagne-synthese.jpg.webp" />
+
                         <div class="md:w-1/2 p-5 drop-shadow-2xl items-stretch">
                             <h1 class="text-xl mt-[10px] font-bold">711 – La période musulmane</h1>
                             <br />
@@ -241,7 +253,7 @@
                         </div>
                     </article>
 
-                   <article
+                    <article
                         class="flex flex-col md:flex-row mx-auto w-11/12 md:5/6 border border-gray-100 rounded-xl overflow-hidden mt-2 md:hover:scale-101 transition duration-400">
                         <img class="w-full h-55 md:h-auto md:w-1/2 shrink-0 object-cover" src="../images/hist_6.jfif" />
                         <div class="md:w-1/2 p-5 drop-shadow-2xl items-stretch">
@@ -255,9 +267,9 @@
                         </div>
                     </article>
 
-                   <article
+                    <article
                         class="flex flex-col md:flex-row mx-auto w-11/12 md:5/6 border border-gray-100 rounded-xl overflow-hidden mt-2 md:hover:scale-101 transition duration-400">
-                       <img class="w-full h-55 md:h-auto md:w-1/2 shrink-0 object-cover" src="../images/hist_7.jfif" />
+                        <img class="w-full h-55 md:h-auto md:w-1/2 shrink-0 object-cover" src="../images/hist_7.jfif" />
                         <div class="md:w-1/2 p-5 drop-shadow-2xl items-stretch">
                             <h1 class="text-xl mt-[10px] font-bold">1978 – Le retour à la démocratie</h1>
                             <br />
@@ -293,7 +305,7 @@
                     </div>
 
                     <div
-                        class="flex flex-col p-5 border border-gray-100 bg-yellow-200  rounded-b-none rounded-xl m-3 hover:bg-red-400 hover:scale-101 transition-colors duration-[2s]">
+                        class="flex flex-col p-5 border border-gray-100 bg-yellow-200 rounded-b-none rounded-xl m-3 hover:bg-red-400 hover:scale-101 transition-colors duration-[2s]">
                         <p class="text-red-900 font-[serif] font-bold">505 983</p>
                         <p class="font-[serif] font-bold">km² de superficie</p>
                         <p class="text-sm text-gray">Un vaste territoire à explorer.</p>
@@ -314,11 +326,11 @@
                     </div>
                 </div>
             </section>
-             <a
-                 class="hover:scale-103 fixed right-0 bottom-5 text-center pr-15 rounded-r-none hover:text-[#E193A3]hover:border-[#E193A3] transition duration-300 p-2 border-2 bg-[#c42847] text-white rounded-lg"
-                 href="#haut"
-                 >Retourner en haut <span class="inline-block animate-bounce">↑</span></a
-             >
+            <a
+                class="hover:scale-103 fixed right-0 bottom-5 text-center pr-15 rounded-r-none hover:text-[#E193A3]hover:border-[#E193A3] transition duration-300 p-2 border-2 bg-[#c42847] text-white rounded-lg"
+                href="#haut"
+                >Retourner en haut <span class="inline-block animate-bounce">↑</span></a
+            >
         </main>
         <footer class="bottom-0 flex items-center justify-center gap-5 p-5 w-full text-[#c42847] bg-white">
             <h1 class="text-xl font-bold">Magasine Découvrir   ©</h1>

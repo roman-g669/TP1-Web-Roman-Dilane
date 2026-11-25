@@ -24,7 +24,7 @@
                     <summary class="text-[#c42847] text-2xl font-serif font-bold">Menu</summary>
                     <nav class="flex flex-col text-start mb-5 text-lg font-bold">
                         <a
-                            class="hover:scale-103 text-[#c42847] underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
+                            class="hover:scale-103 text-[#c42847] hover:underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
                             href="../index.html"
                             >Accueil</a
                         >
@@ -44,7 +44,7 @@
                             >Ressources</a
                         >
                         <a
-                            class="hover:scale-103 hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                            class="hover:scale-103 underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
                             href="evenements.html"
                             >Événements</a
                         >
@@ -62,40 +62,38 @@
 
                 <nav
                     class="hidden lg:flex mt-10 lg:mt-0 lg:items-center justify-evenly items-stretch gap-2 text-lg font-bold">
-                    <div>
-                        <a
-                            class="hover:scale-103 hover:text-[#E193A3] text-[#c42847] hover:underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
-                            href="../index.html"
-                            >Accueil</a
-                        >
-                        <a
-                            class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                            href="gallerie.html"
-                            >Gallerie</a
-                        >
-                        <a
-                            class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                            href="histoire.html"
-                            >Histoire</a
-                        >
-                        <a
-                            class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                            href="ressources.html"
-                            >Ressources</a
-                        >
-                        <a
-                            class="hover:scale-103 hover:text-[#E193A3] underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                            href="evenements.html"
-                            >Événements</a
-                        >
-                        <button
-                            class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
-                            type="button"
-                            commandfor="a-propos"
-                            command="show-modal">
-                            À propos
-                        </button>
-                    </div>
+                    <a
+                        class="hover:scale-103 hover:text-[#E193A3] text-[#c42847] hover:underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
+                        href="../index.html"
+                        >Accueil</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="gallerie.html"
+                        >Gallerie</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="histoire.html"
+                        >Histoire</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="ressources.html"
+                        >Ressources</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:text-[#E193A3] underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="evenements.html"
+                        >Événements</a
+                    >
+                    <button
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                        type="button"
+                        commandfor="a-propos"
+                        command="show-modal">
+                        À propos
+                    </button>
                 </nav>
             </div>
 
@@ -136,7 +134,7 @@
         <!-- A propos -->
 
         <dialog
-            class="rounded-lg mx-auto my-auto w-3/4 md:w-1/2 md:h-4/6 md:h-1/2 p-6"
+            class="rounded-lg mx-auto my-auto w-3/4 md:w-1/2 md:h-4/6 p-6"
             id="a-propos"
             aria-labelledby="titre-a-propos">
             <div class="relative">
@@ -166,11 +164,11 @@
                 <div class="border-4 rounded-lg mx-auto border-gray-200">
                     <img
                         class="w-100 h-100 rounded-lg mb-0 object-cover"
-                        src="images/paysage.jpg"
-                        alt="Portrait de Roman" />
+                        src="../images/Dilane.jfif"
+                        alt="Portrait de Dilane" />
                     <p class="text-center text-xl p-4 text-gray-600">Dilane Pokam</p>
                     <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300">
-                        <a href="mailto:someone@gmail.com">Envoyer un courriel</a>
+                        <a href="mailto:pokamdilane16@gmail.com">Envoyer un courriel</a>
                     </p>
                 </div>
             </div>
@@ -180,21 +178,13 @@
                     Cégep de Saint-Jean-sur-Richelieu
                 </p>
             </div>
-<<<<<<< Updated upstream
-            <div class="border-4 rounded-lg mx-auto border-gray-200">
-                <img class="w-100 h-100 rounded-lg mb-0 object-cover" src="../images/Dilane.jfif"
-                    alt="Portrait de Dilane" />
-                <p class="text-center text-xl p-4 text-gray-600">Dilane Pokam</p>
-                <p class="hover:scale-103 text-center mb-2 underline text-[#c42847] transition duration-300">
-                    <a href="mailto:pokamdilane16@gmail.com">Envoyer un courriel</a>
-=======
         </dialog>
 
         <!-- Main -->
         <main id="top">
             <section class="relative items-center overflow-hidden flex justify-center">
                 <img
-                    class="border-1 border-[#c42847] relative mb-5 sm:h-[400px] m-4 mb-0 lg:h-[600px] w-95/100 rounded-4xl transition duration-600 object-cover"
+                    class="border-1 border-[#c42847] relative rounded-b-none sm:h-[400px] m-4 mb-0 lg:h-[600px] w-95/100 rounded-4xl transition duration-600 object-cover"
                     src="../images/festival-espagne.webp"
                     alt="Vue d'une ville espagnole" />
                 <div class="absolute text-5xl md:text-6xl my-auto lg:text-8xl text-white font-bold font-serif">
@@ -206,82 +196,105 @@
                 <p class="text-center font-serif text-xl text-gray-600">Découvrez la fête, les nouvelles</p>
                 <p class="text-center mt-2 text-gray-600">
                     Apprenez-en sur les différents événements de l'Espagne, et les nouvelles les plus récentes
->>>>>>> Stashed changes
                 </p>
             </section>
 
             <!--Section-->
+
             <section class="flex justify-center py-4">
                 <div class="w-95/100 grid-cols-1 grid">
+                    <!-- La Tomatina -->
+
                     <article
                         class="hover:scale-101 border-2 border-gray-200 min-h-100 h-auto flex flex-col md:flex-row justify-center transition duration-400 rounded-lg bg-white mt-1 m-3 overflow-hidden">
                         <div class="md:w-50/100">
                             <img
-                                class="h-full w-full max-h-[250px] md:max-h-100 object-cover"
+                                class="h-full w-full object-cover"
                                 src="../images/tomatina.jpg"
                                 alt="Une foule se lançant des tomates pour la Tomatina" />
                         </div>
                         <div class="md:w-1/2 m-4">
-                            <h1 class="text-3xl sm:text-5xl lg:text-6xl text-left font-serif text-[#c42847]">
+                            <h2 class="text-3xl sm:text-5xl lg:text-6xl text-left font-serif text-[#c42847]">
                                 La Tomatina
-                            </h1>
+                            </h2>
                             <div class="flex items-stretch">
                                 <p class="text-gray-600 p-1 w-full">
                                     La Tomatina est une fête traditionnelle organisée chaque année dans la ville de
-                                    Buñol, près de Valence. <br /><br />
+                                    Buñol, près de Valence. Cet événement, qui attire des milliers de visiteurs, est
+                                    devenu l'une des célébrations les plus connues d'Espagne.
+                                    <br /><br />
                                     Cet événement est particulièrement connu pour sa gigantesque bataille de tomates,
-                                    durant laquelle des milliers de participants se rassemblent dans les rues.
+                                    durant laquelle des milliers de participants se rassemblent dans les rues pour
+                                    participer à cette activité amusante. Les participants se lancent des tomates dans
+                                    une ambiance festive et remplie d'énergie.
                                     <br /><br />
                                     Cette célébration attire des visiteurs du monde entier et offre une expérience
-                                    unique et amusante.
-                                    <br /><br /><br />
-                                    <span class="underline">Regarez si-dessous une extrait de la Tomatina!</span>
+                                    unique. Elle permet également de découvrir une partie importante de la culture
+                                    espagnole et de profiter de l'ambiance chaleureuse de la région.
+                                    <br /><br />
+                                    <span class="underline">Regardez ci-dessous un extrait de la Tomatina !</span>
                                 </p>
                             </div>
                         </div>
                     </article>
-                    <article class="border-1 bg-white border-[#c42847] rounded-xl">
-                        <p class="text-center text-gray-600 text-4xl font-serif m-2">Le combat de tomates de l'Espagne</p>
+                    <!-- Vidéo de la Tomatina -->
+                    <article class="border-2 bg-white border-gray-200 rounded-xl">
                         <div
-                            class="w-full h-full flex max-w-[1120px] max-h-[660px] aspect-video mx-auto border-2 border-gray-200 h-[330px] w-[560px] rounded-xl bg-white mt-1 m-3 overflow-hidden">
+                            class="m-2 mb-5 max-w-[1120px] aspect-video mx-auto rounded-xl overflow-hidden border-2 border-gray-200">
                             <iframe
                                 class="w-full h-full"
-                                width="1120"
-                                height="660"
                                 src="https://www.youtube.com/embed/U_6NRddULq4?si=rpTO3k85esQXXnQb"
-                                title="YouTube video player"
-                                frameborder="1"
+                                title="La Tomatina en action"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen></iframe>
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </article>
 
+                    <!-- Las Fallas -->
+
                     <article
-                        class="hover:scale-101 mt-19 border-2 border-gray-200 min-h-100 h-auto shadow-xl flex flex-col md:flex-row-reverse justify-center transition duration-400 rounded-lg bg-white mt-1 m-3 overflow-hidden">
+                        class="hover:scale-101 border-2 border-gray-200 min-h-100 lg:max-h-[250px] h-auto shadow-xl flex flex-col md:flex-row-reverse justify-center transition duration-400 rounded-lg bg-white m-3 overflow-hidden">
                         <div class="md:w-48/100">
                             <img
-                                class="h-full max-h-[250px] md:max-h-100 right w-full object-cover"
+                                class="h-full w-full object-cover"
                                 src="../images/evenements2.jpg"
                                 alt="Sculptures artistiques pour Las Fallas" />
                         </div>
                         <div class="md:w-1/2 m-4">
-                            <h1 class="text-3xl sm:text-5xl lg:text-6xl text-left font-serif text-[#c42847]">
+                            <h2 class="text-3xl sm:text-5xl lg:text-6xl text-left font-serif text-[#c42847]">
                                 Las Fallas
-                            </h1>
+                            </h2>
                             <div class="flex items-stretch">
                                 <p class="text-gray-600 p-1 left w-full">
                                     Las Fallas est un festival spectaculaire célébré chaque année dans la ville de
-                                    Valence.
+                                    Valence, située sur la côte est de l'Espagne. Cette fête traditionnelle rassemble
+                                    des milliers de visiteurs venus découvrir les nombreuses activités organisées dans
+                                    les rues de la ville.
                                     <br /><br />
                                     L'événement est reconnu pour ses immenses sculptures artistiques, appelées fallas,
-                                    qui représentent souvent des personnages et des scènes humoristiques. <br /><br />
-                                    Les festivités comprennent également des feux d'artifice, des défilés et des
-                                    célébrations traditionnelles.
+                                    qui représentent souvent des personnages, des situations humoristiques et des
+                                    événements de la société. Ces créations sont réalisées avec beaucoup de précision et
+                                    demandent plusieurs mois de préparation.
+                                    <br /><br />
+                                    Le festival se termine traditionnellement par la Cremà, un événement durant lequel
+                                    les sculptures sont brûlées. Cette tradition symbolise la fin des festivités et le
+                                    début d'un nouveau cycle de célébrations.
                                 </p>
                             </div>
                         </div>
                     </article>
+                    <article
+                        class="border-2 border-gray-200 max-h-100 h-auto shadow-xl flex flex-col md:flex-row-reverse mx-auto w-8/10 rounded-lg mt-0 m-5 overflow-hidden">
+                        <img
+                            class="h-full w-full object-cover"
+                            src="../images/lasfallas.jpg"
+                            alt="Module artistique pour Las Fallas" />
+                    </article>
+
+                    <!-- La Feria de Abril -->
+
                     <article
                         class="hover:scale-101 border-2 border-gray-200 min-h-100 h-auto flex flex-col md:flex-row justify-center transition duration-400 rounded-lg bg-white mt-1 m-3 overflow-hidden">
                         <div class="md:w-50/100">
@@ -291,32 +304,38 @@
                                 alt="Un marché pour La Feria de Abril" />
                         </div>
                         <div class="md:w-1/2 m-4">
-                            <h1 class="text-3xl sm:text-5xl lg:text-6xl text-left font-serif text-[#c42847]">
+                            <h2 class="text-3xl sm:text-5xl lg:text-6xl text-left font-serif text-[#c42847]">
                                 La Feria de Abril
-                            </h1>
+                            </h2>
                             <div class="flex items-stretch">
                                 <p class="text-gray-600 p-1 w-full">
-                                    La Feria de Abril est une grande fête populaire organisée chaque année à Séville.
+                                    La Feria de Abril est une grande fête populaire organisée chaque année à Séville,
+                                    dans la région de l'Andalousie, au sud de l'Espagne. Cette célébration attire de
+                                    nombreux habitants et touristes qui souhaitent découvrir les traditions de cette
+                                    région.
                                     <br /><br />
                                     Pendant plusieurs jours, la ville s'anime grâce aux spectacles de musique, aux
-                                    danses flamenco et aux costumes traditionnels colorés. <br /><br />
-                                    Les visiteurs peuvent également découvrir la gastronomie locale et profiter de
-                                    l'ambiance festive qui caractérise la culture andalouse.
+                                    danses flamenco et aux costumes traditionnels colorés. Les femmes portent notamment
+                                    des robes flamencas, souvent décorées de motifs et de volants.
+                                    <br /><br />
+                                    La Feria de Abril est une excellente occasion de découvrir le patrimoine culturel de
+                                    l'Andalousie et de vivre une expérience typiquement espagnole.
                                 </p>
                             </div>
                         </div>
                     </article>
                 </div>
             </section>
+
             <section class="bg-white border-t-2 border-[#c42847] py-10">
-                <p class="text-3xl sm:text-5xl lg:text-6xl font-serif text-[#c42847] text-center p-4">Les nouvelles</p>
+                <p class="text-3xl sm:text-5xl lg:text-6xl font-serif text-[#c42847] text-center p-4">Les articles</p>
                 <p class="text-center font-serif text-xl text-gray-600">Les nouvelles de la</p>
                 <p class="text-center mt-2 text-gray-600">
                     Apprenez-en sur les différents événements de l'Espagne, et les nouvelles les plus récentes
                 </p>
             </section>
             <a
-                class="hover:scale-103 fixed right-0 bottom-5 text-center pr-15 rounded-r-none hover:text-[#E193A3]hover:border-[#E193A3] transition duration-300 p-2 border-2 bg-[#c42847] text-white rounded-lg"
+                class="hover:scale-103 fixed right-0 bottom-5 text-center pr-15 rounded-r-none hover:text-[#E193A3] hover:border-[#E193A3] transition duration-300 p-2 border-2 bg-[#c42847] text-white rounded-lg"
                 href="#top"
                 >Retourner en haut <span class="inline-block animate-bounce">↑</span></a
             >
