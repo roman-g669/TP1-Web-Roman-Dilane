@@ -9,7 +9,7 @@
     </head>
 
     <body class="bg-gray-200 font-sans">
-                <!-- Header -->
+        <!-- Header -->
         <header class="sticky top-0 z-50">
             <div class="bg-white items-center justify-evenly flex xl:flex-row flex-col p-2">
                 <div class="flex items-center text-center gap-10">
@@ -59,40 +59,38 @@
 
                 <nav
                     class="hidden lg:flex mt-10 lg:mt-0 lg:items-center justify-evenly items-stretch gap-2 text-lg font-bold">
-                    
-                        <a
-                            class="hover:scale-103 hover:text-[#E193A3] text-[#c42847] hover:underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
-                            href="../index.html"
-                            >Accueil</a
-                        >
-                        <a
-                            class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                            href="gallerie.html"
-                            >Gallerie</a
-                        >
-                        <a
-                            class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                            href="histoire.html"
-                            >Histoire</a
-                        >
-                        <a
-                            class="hover:scale-103 hover:text-[#E193A3] underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                            href="ressources.html"
-                            >Ressources</a
-                        >
-                        <a
-                            class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
-                            href="evenements.html"
-                            >Événements</a
-                        >
-                        <button
-                            class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
-                            type="button"
-                            commandfor="a-propos"
-                            command="show-modal">
-                            À propos
-                        </button>
-                    
+                    <a
+                        class="hover:scale-103 hover:text-[#E193A3] text-[#c42847] hover:underline shadow-md font-serif transition duration-300 px-4 p-2 border border-gray-200 rounded-xl"
+                        href="../index.html"
+                        >Accueil</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="gallerie.html"
+                        >Gallerie</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="histoire.html"
+                        >Histoire</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:text-[#E193A3] underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="ressources.html"
+                        >Ressources</a
+                    >
+                    <a
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] shadow-md font-serif px-4 p-2 rounded-xl border border-gray-100 my-auto transition duration-300"
+                        href="evenements.html"
+                        >Événements</a
+                    >
+                    <button
+                        class="hover:scale-103 hover:text-[#E193A3] hover:underline text-[#c42847] whitespace-nowrap px-4 p-2 rounded-xl border border-gray-100 shadow-md font-serif my-auto transition duration-300"
+                        type="button"
+                        commandfor="a-propos"
+                        command="show-modal">
+                        À propos
+                    </button>
                 </nav>
             </div>
 
@@ -180,6 +178,21 @@
         </dialog>
 
         <main id="haut">
+            <article class="border-2 bg-white border-gray-200 rounded-xl">
+                <div
+                    class="m-2 mb-5 max-w-[1120px] aspect-video mx-auto rounded-xl overflow-hidden border-2 border-gray-200">
+                    <iframe
+                        class="w-full h-full"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/EfxL0GAF4Ds?si=geWmgrpGxYzf5XtF"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+
             <a
                 class="hover:scale-103 fixed right-0 bottom-5 text-center pr-15 rounded-r-none hover:text-[#E193A3]hover:border-[#E193A3] transition duration-300 p-2 border-2 bg-[#c42847] text-white rounded-lg"
                 href="#haut"
